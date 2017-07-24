@@ -1,27 +1,475 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-	<base href="[[!++site_url]]">
+	<base href="">
 	
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<meta name="description" content="[[*description]]">
+	<meta name="description" content="">
 
-	<title>Заголовок страницы</title>
+	<title>flowera - интернет-магазин корейской косметики</title>
 	
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="assets/css/normalize.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.min.css">
+
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="assets/plugins/slick/slick-theme.css"/>
+
 </head>
 <body>
-	<header></header>
+	<header>
+		<div class="top-side">
+			<div class="container">
+				<div class="top-side__wrapper">
+					<span class="top-side__item">Добро пожаловать в интернет-магазин крейской косметики</span>
+					
+					<span class="top-side__item top-side__item-url">
+						<a href="#">Блог</a>
+						<a href="#">Статьи</a>
+						<a href="#">Доставка и оплата</a>
+						<a href="#">Контакты</a>
+					</span>
 
-	<main></main>
+					<span class="top-side__item top-side__item-url">
+						<a href="#">Вход</a>
+						<span class="top-side__item top-side__item-url">|</span>
+						<a href="#">Регистрация</a>
+					</span>
+				</div>
+			</div>
+		</div>
 
-	<footer></footer>
+		<div class="header-side">
+			<div class="container">
+				<div class="header-side__wrapper">
+					<a href="/"><div class="header-side__logo"></div></a>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+					<div class="header-side__info">
+						<p class="icon icon-map header-side__info-map">Ваш город: <a href="#">Новосибирск</a></p>
+						<p class="icon icon-phone header-side__info-phone"><a href="tel:88002555544">8 800 255-55-44</a></p>
+					</div>
+					
+					<div class="header-side__search">
+						<form action="#">
+							<input class="header-side__search-field" type="text" placeholder="Поиск товаров">
+							<input class="header-side__search-btn" type="submit" value="Поиск">
+						</form>
+					</div>
+					
+					<div class="header-side__cart"><a href="#">0</a></div>
+					
+				</div>
+			</div>
+		</div>
+
+		<div class="main-menu">
+			<div class="container">
+				<div class="main-menu__wrapper">
+					<span>
+						<a class="main-menu__item" href="#">BB Cream</a>
+						<a class="main-menu__item" href="#">Очищение</a>
+						<a class="main-menu__item" href="#">Декоративная косметика</a>
+						<a class="main-menu__item" href="#">Основной уход</a>
+						<a class="main-menu__item" href="#">Маски</a>
+						<a class="main-menu__item" href="#">Для волос</a>
+						<a class="main-menu__item" href="#">Для тела</a>
+						<a class="main-menu__item" href="#">Аксессуары</a>
+					</span>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section class="slider">
+		<div class="slider__wrapper container">
+			<a href="#">
+				<div class="slider__control">
+					<div class="slider__control-left"></div>
+				</div>
+			</a>
+			<div class="slider__item"><img src="assets/img/slider/1.png" alt=""></div>
+			<a href="#">
+				<div class="slider__control">
+					<div class="slider__control-right"></div>
+				</div>
+			</a>
+		</div>
+	</section>
+
+	<div class="container">
+		<section class="advantages">
+			<div class="advantages__wrapper">
+				<p class="col-md-3 advantages__item advantages__item-delivery">Бесплатная доставка в&nbsp;день заказа</p>
+				<div class="divider"></div>
+				<p class="col-md-3 advantages__item advantages__item-box">Свой склад на&nbsp;9&nbsp;000 позиций</p>
+				<div class="divider"></div>
+				<p class="col-md-3 advantages__item advantages__item-market">Розничные магазины практически в&nbsp;каждом городе России</p>
+				<div class="divider"></div>
+				<p class="col-md-3 advantages__item advantages__item-tumbusup">100% гарантия качества всей продукции</p>
+			</div>
+		</section>
+
+		<section class="goods">
+			<h2>Наши новинки</h2>
+
+			<div class="goods__control-wrapper" style="display: none;">
+				<div class="goods__control-items">
+					<a href="#">
+						<div class="goods__control">
+							<div class="goods__control-left"></div>
+						</div>
+					</a>
+					<a href="#">
+						<div class="goods__control">
+							<div class="goods__control-right"></div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		<div class="goods__wrapper goods_slider">
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/1.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/2.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/3.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/4.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/5.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/1.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/2.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/3.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/4.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/5.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price">1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+		</div>
+	</section>
+
+	<section class="goods">
+		<h2>Товары со скидкой</h2>
+		<!--
+		<div class="goods__control-wrapper">
+			<div class="goods__control-items">
+				<a href="#">
+					<div class="goods__control">
+						<div class="goods__control-left"></div>
+					</div>
+				</a>
+				<a href="#">
+					<div class="goods__control">
+						<div class="goods__control-right"></div>
+					</div>
+				</a>
+			</div>
+		</div>
+		-->
+		<div class="goods__wrapper sale_slider">
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/1.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/2.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>750 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/3.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1350 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/4.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1950 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/5.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/1.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/2.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>750 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/3.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1350 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/4.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1950 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+			<div class="goods__item">
+				<div class="goods__item-body">
+					<img class="goods__item-img" src="assets/img/goods/5.png" alt="">
+					<h3 class="goods__item-header"><a href="#">Эмульсия для лица<br>The Skin House Aloe<br>Fresh Emulsion</a></h3>
+					<div class="goods__item-price"><span class="goods__item-price-old">2990 ₽</span>1550 ₽</div>
+				</div>
+				<button class="btn goods__item-btn-bottom"><span class="goods__item-btn-bottom-icon">В корзину</span></button>
+			</div>
+		</div>
+	</section>
+</div>
+<section class="banners">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="banners__item banners__item-one"></div>
+			</div>
+			<div class="col-md-6">
+				<div class="banners__item banners__item-two"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="news">
+	<div class="container">
+		<h2>Новости</h2>
+		<div class="row">
+			<div class="news__item col-sm-4">
+				<div class="news__item-img"><img src="assets/img/news/1.png" alt=""></div>
+				<div class="news__item-date">10.01.17</div>
+				<div class="news__item-header"><a href="#">В честь наступающего Международного Женского Дня, дарим скидку на всю продукцию производителя Secret Key 10% с 3 по 13 марта 2016 года!!!</a></div>
+				<div class="news__item-text">На сайте цены указаны без скидки, сумма оплаты будет пересчитана менеджером, после оформления заказа!</div>
+			</div>
+			<div class="news__item col-sm-4">
+				<div class="news__item-img"><img src="assets/img/news/2.png" alt=""></div>
+				<div class="news__item-date">10.01.17</div>
+				<div class="news__item-header"><a href="#">В честь наступающего Международного Женского Дня, дарим скидку на всю продукцию производителя Secret Key 10% с 3 по 13 марта 2016 года!!!</a></div>
+				<div class="news__item-text">На сайте цены указаны без скидки, сумма оплаты будет пересчитана менеджером, после оформления заказа!</div>
+			</div>
+			<div class="news__item col-sm-4">
+				<div class="news__item-img"><img src="assets/img/news/3.png" alt=""></div>
+				<div class="news__item-date">10.01.17</div>
+				<div class="news__item-header"><a href="#">В честь наступающего Международного Женского Дня, дарим скидку на всю продукцию производителя Secret Key 10% с 3 по 13 марта 2016 года!!!</a></div>
+				<div class="news__item-text">На сайте цены указаны без скидки, сумма оплаты будет пересчитана менеджером, после оформления заказа!</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="post">
+	<div class="container">
+		<h2>Корейская косметика в Новосибирске</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="post__item-img"><img src="assets/img/news/0.png" alt=""></div>
+			</div>
+			<div class="col-md-8">
+				<div class="post__item-text">
+					<p>
+						Азиатские женщины славятся своей естественной красотой и здоровьем благодаря грамотному использованию косметики. Заметьте, что клиники эстетической хирургии в Европе развиваются более активно, чем в Азии. Это объясняется приверженностью азиатских женщин к естественным косметическим средствам, которые помогают сохранить молодость и красоту, а не бороться с последствиями старения.
+					</p>
+
+					<p>
+						Корейская косметика получила большую популярность во всем мире как раз благодаря высокому качеству и естественным компонентам в ее составе. Древесный уголь, фруктовые кислоты, экстракты водорослей, коллаген и витамины, натуральные масла – корейская косметика удачно сочетает восточные традиции с прогрессивными технологиями.
+					</p>
+
+					<p>
+						Декоративная косметика из Кореи позволяет не только замаскировать недостатки кожи, но и вылечить их. По такому принципу работает знаменитый BB Cream или Blemish Balm Cream, который одновременно скрывает морщинки, веснушки или прыщики. А также обладает эффектом качественного косметического крема. Некоторые ошибочно полагают, что корейская косметика подходит только азиатским женщинам, однако, отзывы российских покупательниц о bb cream говорят о том, что это средство стоит купить и использовать в качестве основного ухода за кожей.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="footer__menu col-md-2">
+				<div class="footer__menu-header">Информация</div>
+				<ul>
+					<li><a href="#">О магазине</a></li>
+					<li><a href="#">Доставка и оплата</a></li>
+					<li><a href="#">Новости</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Блог</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="footer__menu col-md-2">
+				<div class="footer__menu-header">Каталог</div>
+				<ul>
+					<li><a href="#">BB cream</a></li>
+					<li><a href="#">Очищение</a></li>
+					<li><a href="#">Декоративная косметика</a></li>
+					<li><a href="#">Основной уход</a></li>
+					<li><a href="#">Маски</a></li>
+					<li><a href="#">Для волос</a></li>
+					<li><a href="#">Для тела</a></li>
+					<li><a href="#">Аксессуары</a></li>
+				</ul>
+			</div>
+
+			<div class="pull-right col-md-4">
+				<div class="footer__contacts">
+					<div class="footer__contacts-phone"><a href="tel:88002555544">8 800 255-55-44</a></div>
+					<div class="footer__contacts-site">
+						<a href="mailto:info@flovera.ru">info@flovera.ru</a>
+					</div>
+					<div class="social">
+						<span class="social__header">Мы в социальных сетях:</span>
+
+						<div class="social__icon-items">
+							<a href="#"><div class="social__icon social__icon-vk"></div></a>
+							<a href="#"><div class="social__icon social__icon-fb"></div></a>
+							<a href="#"><div class="social__icon social__icon-ok"></div></a>
+							<a href="#"><div class="social__icon social__icon-tw"></div></a>
+						</div>
+
+					</div>
+					<div class="epay">
+						<div class="epay__items">
+							<div class="epay__icon epay__icon-visa"></div>
+							<div class="epay__icon epay__icon-mastercard"></div>
+							<div class="epay__icon epay__icon-yandex"></div>
+							<div class="epay__icon epay__icon-qiwi"></div>
+						</div>
+					</div>
+					<div class="stamp">
+						<span>Создание сайта</span> - <a href="#">cтудия Бобрик</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="assets/plugins/slick/slick.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.goods_slider').slick({
+			infinite: false,
+			slidesToShow: 5,
+			slidesToScroll: 3,
+			prevArrow: '<div class="goods__control" style="position: absolute;top:-40px;right:45px;"><div class="goods__control-left"></div></div>',
+			nextArrow: '<div class="goods__control" style="position: absolute;top:-40px;right:0;"><div class="goods__control-right"></div></div>'
+		});
+	});
+
+	$(document).ready(function(){
+		$('.sale_slider').slick({
+			infinite: false,
+			slidesToShow: 5,
+			slidesToScroll: 3,
+			prevArrow: '<div class="goods__control" style="position: absolute;top:-40px;right:45px;"><div class="goods__control-left"></div></div>',
+			nextArrow: '<div class="goods__control" style="position: absolute;top:-40px;right:0;"><div class="goods__control-right"></div></div>'
+		});
+	});
+</script>
 </body>
 </html>
